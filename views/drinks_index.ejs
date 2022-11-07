@@ -9,63 +9,13 @@
 <body>
     <h1>Welcome to gitPub</h1>
 
-<ul>
-
-
-    <li>name: 'cruddy mary',
-    price: 132,
-    image: 'https://i.imgur.com/Va5iIw5.jpg'</li>
-  
-
-    <li> name: 'index on the beach',
-        price: 68,
-            image: 'https://i.imgur.com/XV2aPa2.jpg'
-        </li>
-  
-
-            <li> 
-                name: 'hack & coke',
-    price: 1,
-    image: 'https://i.imgur.com/rLOXFRI.jpg'
-</li>
-
-    <li> 
-        name: 'whiskey-value pair',
-    price: 11,
-    image: 'https://i.imgur.com/a7rmkoS.jpg'
-</li>
-
-    <li> 
-        name: '404 horsemen',
-    price: 202,
-    image: 'https://i.imgur.com/FLucOLr.jpg'
-</li>
-
-    <li>
-         name: 'if stateMint julep',
-    price: 2,
-    image: 'https://i.imgur.com/yaoK0Dg.jpg'
-</li>
-
-    <li>
-         name: 'APIPA',
-    price: 43,
-    image: 'https://i.imgur.com/qAhA7pi.jpg'
-</li>
-
-    <li>
-         name: 'node to joy',
-    price: 56,
-    image: 'https://i.imgur.com/MbVdwZz.jpg'
-</li>
-
-</ul>
-<ul>
-    
-    <% for (var i = 0; i < drinks.length ; i++) { %>
-        <li> <%= drinks[i] %> </li>
-    <% } %>
-</ul>
+    <ul>
+        <% for(let i = 0; i < alldrinks.length; i++) { %>
+            <li>
+                <a href="/drinks/<%=i%>"><%=alldrinks[i].name %></a>
+            </li>
+        <% } %>
+    </ul>
 
     <style type="text/css">
         body {
