@@ -37,7 +37,7 @@ const drinks = [
     {
       name: 'node to joy',
       price: 56,
-      image: 'https://i.imgur.com/MbVdwZz.jpg'
+      image: 'https://i.imgur.com/MbVdwZz.jpg',
     }
   ];
   module.exports=drinks
